@@ -99,13 +99,13 @@ function LandingPage({
         }}
         elevation={trigger ? 3 : 0}
       >
-        <Container paddingY={1}>
+        <Box paddingX={2}>
           <Header
             pages={pages}
             onSidebarOpen={() => setOpenSidebar(true)}
             colorInvert={trigger ? false : colorInvert}
           />
-        </Container>
+        </Box>
       </AppBar>
       <Sidebar
         onClose={() => setOpenSidebar(false)}

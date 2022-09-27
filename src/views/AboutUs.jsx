@@ -14,6 +14,7 @@ function AboutUs(props) {
     <Box
       sx={{
         boxShadow: "0 4px 12px -12px gray",
+        
       }}
       id="about"
     >
@@ -21,9 +22,11 @@ function AboutUs(props) {
                 display={"flex"}
                 flexDirection={{ xs: "column", sm: "column", md: "row" }}
                 paddingY={{xs: 6, sm: 2}}
+              alignItems={"center"}
+              justifyContent={"center"}
       >
-        <Box maxWidth={{ xs: "50%", sm: "50%" }} width={{ sm: 1 }}
-        
+        <Box maxWidth={{ sm: "50%" }} display={{xs: "none", sm: "flex"}} width={{ sm: 1 }}
+        data-aos={"fade-up"}
         component={CardMedia}
         height={1}
         minHeight={400}
@@ -32,7 +35,7 @@ function AboutUs(props) {
         >
 
         </Box>
-        <Box>
+        <Box maxWidth={{ xs: "100%", sm: "50%" }} paddingTop={{xs: "0px"}}>
           <Box
             data-aos={"fade-up"}
           >

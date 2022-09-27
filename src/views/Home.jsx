@@ -36,7 +36,7 @@ function Home() {
           flexDirection={{ xs: "column", sm: "column", md: "row" }}
           paddingY={{xs: 6, sm: 2}}
         >
-          <Box maxWidth={{ xs: "50%", sm: "50%" }} width={{ sm: 1 }}>
+          <Box marginBottom={{xs :"20px" }} maxWidth={{ xs: "100%", sm: "50%" }} width={{ xs: 1, sm: 1 }}>
             <Typography
               variant="h3"
               color="text.primary"
@@ -88,6 +88,7 @@ function Home() {
                   size="large"
                   variant="contained"
                   maxWidth={100}
+                  fullWidth
                 >
                   Book now
                 </Button>
@@ -95,11 +96,15 @@ function Home() {
              
             </Box>
           </Box>
+          
           <Box style={{ borderRadius:'5px'}}
+
                   component={CardMedia}
                   height={1}
-                  width={1}
+                  marginLeft={{sm: "20px"}}
+                  width={{xs: 1, sm: 1}}
                   minHeight={400}
+                  maxWidth={{xs: "100%",sm: "49%"}}
                   image={taxi}
                   alt={"taxi"}
                 >
